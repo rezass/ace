@@ -11,7 +11,6 @@
 !/.gitignore
 .*.gz
 *.tmTheme.js
-package-lock.json
 
 # A handy place to put stuff that git should ignore:
 /coverage
@@ -24,3 +23,5 @@ jam/
 npm-debug.log
 deps/
 dist
+
+local.tar.gz
