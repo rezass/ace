@@ -41,7 +41,7 @@ ace.tgz: build
 	cp LICENSE ace-`./version.js`/
 	tar cvfz ace-`./version.js`.tgz ace-`./version.js`/
 
-SHA=$(shell git rev-parse HEAD)
+SHA ?= $(shell git rev-parse HEAD)
 VERSION=$(shell ./version.js)
 RELEASE=v$(VERSION)-$(SHA)
 TAR=local.tar.gz
