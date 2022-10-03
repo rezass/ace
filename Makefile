@@ -39,7 +39,7 @@ ace.tgz: build
 	mv build ace-`./version.js`/
 	cp Readme.md ace-`./version.js`/
 	cp LICENSE ace-`./version.js`/
-	tar cvfz ace-`./version.js`.tgz ace-`./version.js`/
+	tar cvfz ace-`./version.js`-$(SHA).tgz ace-`./version.js`/
 
 SHA ?= $(shell git rev-parse HEAD)
 VERSION=$(shell ./version.js)
